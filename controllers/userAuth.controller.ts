@@ -1,7 +1,7 @@
-import User from "../models/user.model.js";
-import { findUserByEmail } from "../utills/auth.js";
+import User from "../models/user.model.ts";
+import { findUserByEmail } from "../utills/auth.ts";
 
-export async function registerUser(req,res){
+export async function registerUser(req:any,res:any){
 
     const {firstName,username,email,password, lastName, phone,role} = req.body;
 
